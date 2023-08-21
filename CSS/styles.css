@@ -44,6 +44,7 @@ header {
     background-color: #333;
     border: 2px solid #fff;
     border-radius: 4px;
+    margin-left: 15px;
     color: #FFF;
     padding: 5px 15px;
     cursor: pointer;
@@ -148,4 +149,29 @@ header {
 
 .note.fixed {
     background-color: #3c3c3f;
+}
+
+/* Responsividade */
+@media(max-width: 450px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    #searchContainer {
+        width: 100%;
+    }
+
+    #searchInput {
+        width: 100%;
+    }
+
+    #addNoteContainer {
+        padding: 0 2rem;
+    }
+
+    #notesContainer {
+        grid-template-columns: repeat(auto-fill, 100%);
+    }
 }
